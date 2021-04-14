@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -38,7 +39,36 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[],
+          children: <Widget>[
+            ElevatedButton(
+                onPressed: (){},
+                child: Text('Quick Food Recipes'),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.red.shade700),
+                ),
+            ),
+            ElevatedButton(
+              onPressed: (){},
+              child: Text('Vegan Options'),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.red.shade700),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: (){},
+              child: Text('Healthy Fast Food Options'),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.red.shade700),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: (){},
+              child: Text('Diabetic Friendly Foods'),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.red.shade700),
+              ),
+            ),
+          ],
         ),
       ),
     );
