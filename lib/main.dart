@@ -37,38 +37,49 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            ElevatedButton(
-                onPressed: (){},
+        child: Container(
+          constraints: BoxConstraints.expand(),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/background.jpg"),
+                  fit: BoxFit.cover)),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              ElevatedButton(
+                onPressed: () {},
                 child: Text('Quick Food Recipes'),
                 style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.red.shade700),
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.red.shade700),
                 ),
-            ),
-            ElevatedButton(
-              onPressed: (){},
-              child: Text('Vegan Options'),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.red.shade700),
               ),
-            ),
-            ElevatedButton(
-              onPressed: (){},
-              child: Text('Healthy Fast Food Options'),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.red.shade700),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('Vegan Options'),
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.red.shade700),
+                ),
               ),
-            ),
-            ElevatedButton(
-              onPressed: (){},
-              child: Text('Diabetic Friendly Foods'),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.red.shade700),
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('Healthy Fast Food Options'),
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.red.shade700),
+                ),
               ),
-            ),
-          ],
+              ElevatedButton(
+                onPressed: () {},
+                child: Text('Diabetic Friendly Foods'),
+                style: ButtonStyle(
+                  backgroundColor:
+                      MaterialStateProperty.all(Colors.red.shade700),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
