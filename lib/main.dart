@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food/diabetic_friendly_foods.dart';
+import 'package:food/healthy_fast_food_options.dart';
 import 'package:food/quick_food_recipes.dart';
 import 'package:food/vegan_options.dart';
 
@@ -69,7 +71,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HealthyFastFoodOptions()));
+                },
                 child: Text('Healthy Fast Food Options'),
                 style: ButtonStyle(
                   backgroundColor:
@@ -77,7 +81,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => DiabeticFriendlyFoods()));
+                },
                 child: Text('Diabetic Friendly Foods'),
                 style: ButtonStyle(
                   backgroundColor:
