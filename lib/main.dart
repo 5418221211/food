@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food/quick_food_recipes.dart';
+import 'package:food/vegan_options.dart';
 
 void main() {
   runApp(MyApp());
@@ -47,7 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => QuickFoodRecipes()));
+                },
                 child: Text('Quick Food Recipes'),
                 style: ButtonStyle(
                   backgroundColor:
@@ -55,7 +59,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => VeganOptions()));
+                },
                 child: Text('Vegan Options'),
                 style: ButtonStyle(
                   backgroundColor:
