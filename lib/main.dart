@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food/homepage.dart';
 import 'package:food/log_in_page.dart';
 
 
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LogInPage(),
+      home: MyHomePage(title: 'Healthy Habits',),
     );
   }
 }
