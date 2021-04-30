@@ -14,8 +14,9 @@ class DiabeticFriendlyFoods extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
-
+        appBar: AppBar(
+          title: Text('Diabetic Friendly Foods'),
+        ),
         body: Center(
           child: Container(
             constraints: BoxConstraints.expand(),

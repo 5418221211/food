@@ -7,6 +7,15 @@ class DiabeticFriendlyFoodsSnacks extends StatelessWidget {
       appBar: AppBar(
         title: Text('Diabetic Friendly Foods: Snacks'),
       ),
+      body: Center(
+        child: Container(
+          constraints: BoxConstraints.expand(),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/13.webp"),
+                  fit: BoxFit.cover)),
+        ),
+      ),
     );
   }
 }
