@@ -7,6 +7,15 @@ class VeganOptionsDesserts extends StatelessWidget {
       appBar: AppBar(
         title: Text('Vegan Options: Desserts'),
       ),
+      body: Center(
+        child: Container(
+          constraints: BoxConstraints.expand(),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/16.webp"),
+                  fit: BoxFit.cover)),
+        ),
+      ),
     );
   }
 }

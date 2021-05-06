@@ -7,6 +7,15 @@ class VeganOptionsBreakfast extends StatelessWidget {
       appBar: AppBar(
         title: Text('Vegan Options: Breakfast'),
       ),
+      body: Center(
+        child: Container(
+          constraints: BoxConstraints.expand(),
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/15.webp"),
+                  fit: BoxFit.cover)),
+        ),
+      ),
     );
   }
 }
