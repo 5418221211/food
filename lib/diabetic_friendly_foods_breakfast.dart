@@ -14,8 +14,17 @@ class DiabeticFriendlyFoodsBreakfast extends StatelessWidget {
               image: DecorationImage(
                   image: AssetImage("assets/7.webp"),
                   fit: BoxFit.cover)),
+          child: Center(child: Container(
+              color: Colors.red,
+              child: Text('Quinoa salad with chickpeas, roasted eggplant and feta:',
+                style: TextStyle(
+                  color: Colors.white
+                ),
+              )
+          )
+          ),
         ),
-      ),
+          ),
     );
   }
 }
