@@ -12,19 +12,28 @@ class DiabeticFriendlyFoodsBreakfast extends StatelessWidget {
           constraints: BoxConstraints.expand(),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage("assets/7.webp"),
-                  fit: BoxFit.cover)),
-          child: Center(child: Container(
-              color: Colors.red,
-              child: Text('Quinoa salad with chickpeas, roasted eggplant and feta:',
-                style: TextStyle(
-                  color: Colors.white
-                ),
-              )
-          )
-          ),
+                  image: AssetImage("assets/7.webp"), fit: BoxFit.cover)),
+          child: Center(
+              child: Column(
+                children: [
+                  SizedBox(height: 32.0,),
+                  Container(
+                      color: Colors.red,
+                      child: Text(
+                        'Quinoa salad with chickpeas,roasted eggplant and feta',
+                        style: TextStyle(color: Colors.white),
+                      )),
+                  SizedBox(height: 64.0,),
+                  Container(
+                      color: Colors.red,
+                      child: Text(
+                        'Quinoa salad with chickpeas,roasted eggplant and feta',
+                        style: TextStyle(color: Colors.white),
+                      )),
+                ],
+              )),
         ),
-          ),
+      ),
     );
   }
 }
