@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food/diabetic_friendly_foods.dart';
-import 'package:food/healthy_fast_food_options.dart';
-import 'package:food/quick_food_recipes.dart';
+import 'package:food/quick_food_options.dart';
 import 'package:food/vegan_options.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -32,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: <Widget>[
               ElevatedButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => QuickFoodRecipes()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HealthyFastFoodOptions()));
                 },
                 child: Text('Quick Food Recipes'),
                 style: ButtonStyle(
@@ -45,16 +44,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => VeganOptions()));
                 },
                 child: Text('Vegan Options'),
-                style: ButtonStyle(
-                  backgroundColor:
-                  MaterialStateProperty.all(Colors.red.shade700),
-                ),
-              ),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => HealthyFastFoodOptions()));
-                },
-                child: Text('Healthy Fast Food Options'),
                 style: ButtonStyle(
                   backgroundColor:
                   MaterialStateProperty.all(Colors.red.shade700),
