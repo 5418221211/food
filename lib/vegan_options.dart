@@ -5,7 +5,6 @@ import 'package:food/vegan_options_desserts.dart';
 import 'package:food/vegan_options_dinner.dart';
 import 'package:food/vegan_options_fast_meals.dart';
 import 'package:food/vegan_options_lunch.dart';
-import 'package:food/vegan_options_seasonal_recipies.dart';
 import 'package:food/vegan_options_snacks.dart';
 
 class VeganOptions extends StatelessWidget {
@@ -117,11 +116,11 @@ class VeganOptions extends StatelessWidget {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>
-                                    VeganOptionsSeasonalRecipies()));
+                        // Navigator.push(
+                        //     context,
+                        //     MaterialPageRoute(
+                        //         builder: (context) =>
+                        //             VeganOptionsSeasonalRecipies()));
                       },
                       child: SizedBox(
                           width: 72.0, child: Center(child: Text('Seasonal'))),

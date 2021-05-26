@@ -8,7 +8,6 @@ import 'package:food/diabetic_friendly_foods_fast_meals.dart';
 import 'package:food/diabetic_friendly_foods_lunch.dart';
 import 'package:food/diabetic_friendly_foods_seasonal_recipies.dart';
 import 'package:food/diabetic_friendly_foods_snacks.dart';
-import 'package:food/quick_food_options_breakfast.dart';
 
 class DiabeticFriendlyFoods extends StatelessWidget {
   @override
